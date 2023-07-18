@@ -4,7 +4,6 @@ import "fmt"
 
 // Functions and Returns
 
-
 func main() {
 	card := newCard()
 	fmt.Println(card)
