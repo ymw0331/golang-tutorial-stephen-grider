@@ -1,3 +1,3 @@
-module 001-helloworld
+module 007-new-deck
 
 go 1.20
