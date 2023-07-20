@@ -18,7 +18,8 @@ import (
 	"time"
 )
 
-type deck []string
+type deck []string 
+	// slice of deck declaration
 
 func newDeck() deck { //return a value of type deck
 	// Create and return a list of playing cards. Essentially an array of strings
@@ -44,6 +45,7 @@ func (d deck) print() {
 	}
 }
 
+
 // Multiple return values
 func deal(d deck, handSize int) (deck, deck) {
 	//return two values, that return type deck
@@ -59,7 +61,7 @@ func (d deck) toString() string {
 
 func (d deck) saveToFile(filename string) error {
 	// Save a list of cards to a file on the local machine (stdlib writeFile )
-	// Converting deck into slice of bytes => deck -> []string -> string -> []byte
+	// Converting   deck into slice of bytes => deck -> []string -> string -> []byte
 	return ioutil.WriteFile(filename, []byte(d.toString()), 0666)
 }
 
