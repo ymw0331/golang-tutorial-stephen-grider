@@ -17,4 +17,4 @@ func updateSlice(s []string) {
 
 
 // Value Types => int, float, string, bool, structs
-// Reference Types => slices, maps, channels, pointers, functions
+// Reference Types => slices, maps, channels, pointers, functions``
