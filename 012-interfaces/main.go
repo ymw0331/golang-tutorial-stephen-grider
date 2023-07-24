@@ -4,11 +4,9 @@ import "fmt"
 
 type bot interface {
 	getGreeting() string
-	// if there is any other type inside program, that has function getGreeting and string associated with it, that type is promoted as type bot
-	
+	// if there is any other type inside program, that has function getGreeting and string associated with it, that type is promoted aa type bot
 }
 
-// implicit type, does not need to "implement"  -> type englishBot implement bot struct{}
 // created empty structs, so we can create function to work with it
 type englishBot struct{}
 type spanishBot struct{}
